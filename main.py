@@ -11,7 +11,7 @@ print(x_train.shape, y_train.shape)
 print(x_test.shape, y_test.shape)
 
 x_train = x_train.reshape(x_train.shape[0], 28, 28, 1)
-x_test = x_test.reshape(x_test.shape[0],x_test.shape[1], x_test.shape[2],1)
+x_test = x_test.reshape(x_test.shape[0], x_test.shape[1], x_test.shape[2],1)
 input_shape = (28, 28, 1)
 
 print(x_train.shape, y_train.shape)
@@ -55,7 +55,7 @@ plt.grid()
 plt.show()
 
 
-y_train = keras.utils.to_categorical(y_train, num_classes=10, dtype = 'int')
+y_train = keras.utils.to_categorical(y_train, num_classes=10, dtype='int')
 y_test = keras.utils.to_categorical(y_test, num_classes=10, dtype='int')
 
 print(y_test)
