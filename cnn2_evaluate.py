@@ -9,7 +9,7 @@ import numpy as np
 from PIL import Image
 from sklearn.utils import shuffle
 
-model = load_model('mnist.h5')
+model = load_model('cnn2.h5')
 
 def read_folder(start_code, end_code, dict, train_x, train_y, correction):
     for code in range(start_code, end_code+1):
